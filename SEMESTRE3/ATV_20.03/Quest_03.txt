@@ -1,0 +1,10 @@
+//imprima os valores de 1 a 100 em ordem decrescente
+#include <stdio.h>
+int main (){
+
+    for(int n=100; n > 0; n--){
+        printf("%d\n", n);
+    }
+    return 0;
+
+}

@@ -1,0 +1,24 @@
+//crie um algoritmo que imprima até 10 enquanto não for digitado "parar"
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char entrada[20];
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d\n", i);
+
+        
+        printf("Digite 'parar' para interromper ou pressione Enter para continuar: ");
+        fgets(entrada, sizeof(entrada), stdin);
+
+        entrada[strcspn(entrada, "\n")] = '\0';
+
+        if (strcmp(entrada, "parar") == 0) {
+            printf("Você digitou 'parar'. O programa será encerrado.\n");
+            break;
+        }
+    }
+
+    return 0;
+}

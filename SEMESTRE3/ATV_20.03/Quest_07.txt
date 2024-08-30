@@ -1,0 +1,16 @@
+//imprima a tabuada de um valor determinado pelo usuário
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    printf("Digite um número inteiro positivo:\n");
+    scanf("%d", &i);
+
+    printf("Imprimindo Tabuada de %d ...\n\n", i);
+
+   for (j = 1; j <= 10; j++) {
+        printf("%d x %d = %d\n", i, j, i * j);
+    }
+
+    return 0;
+}

@@ -1,0 +1,12 @@
+//Imprima somente os valores pares de 1 ate 100
+
+#include <stdio.h>
+int main () {
+
+    for(int n = 2; n < 101; n+=2){
+        printf("%d\n", n);
+
+    }
+    return 0;
+
+}

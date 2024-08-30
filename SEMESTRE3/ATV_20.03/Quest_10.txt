@@ -1,0 +1,22 @@
+//crie um algoritmo que mostre a frase "HELLO WORLD"  e depois pergunte ao usuário se deseja parar
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char entrada[20];
+    printf("HELLO WORLD\n");
+
+    while (1) {
+        printf("Digite 'parar' para encerrar o programa ou pressione Enter para continuar: ");
+        fgets(entrada, sizeof(entrada), stdin);
+
+        entrada[strcspn(entrada, "\n")] = '\0';
+
+        if (strcmp(entrada, "parar") == 0) {
+            printf("Você digitou 'parar'. O programa será encerrado.\n");
+            break;
+        }
+    }
+
+    return 0;
+}

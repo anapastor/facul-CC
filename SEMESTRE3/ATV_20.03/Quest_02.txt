@@ -1,0 +1,11 @@
+//Imprima os multiplos de 3 de 1 a 100
+#include <stdio.h>
+int main (){
+    int resultado;
+    for(int n=3, i=1; i < 101; i++){
+        resultado = n * i;
+        printf("%d\n", resultado);
+
+    }
+    return 0;
+}
